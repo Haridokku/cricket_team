@@ -1,0 +1,28 @@
+GET http://localhost:3000/players/
+###
+
+
+GET http://localhost:3000/players/10/
+###
+
+POST http://localhost:3000/players/
+Content-Type:application/json
+
+{
+    "playerName":"hari",
+    "jerseyNumber":8,
+    "role":"All-rounder"
+}
+###
+
+PUT http://localhost:3000/players/10/
+Content-Type:application/json
+
+{
+    "playerName":"hari",
+    "jerseyNumber":10,
+    "role":"All-rounder"   
+}
+###
+
+DELETE http://localhost:3000/players/10/
